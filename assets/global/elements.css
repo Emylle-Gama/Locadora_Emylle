@@ -1,0 +1,293 @@
+/* IMPORTAÇÕES */
+@import 'modais.css';
+
+/* CONFIGURAÇÕES GLOBAIS */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    align-items: center;
+}
+
+/* AQUI É ESTILIZADO A BARRA SUPERIOR ONDE FICA A LOGO E O USUARIO LOGADO */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #92E3A9;
+}
+
+.navbar-content .logo img {
+    width: 100px;
+}
+
+.navbar-content .welcome {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content .welcome p {
+    margin-right: 10px;
+}
+
+.navbar-content .welcome img {
+    width: 40px;
+    border-radius: 50%;
+}
+main a {
+    text-decoration: none;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.cabecalho h1 {
+    color: #006666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cabecalho .icon-cabecalho {
+    text-decoration: none;
+}
+.cabecalho .icon-cabecalho img:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.container {
+    display: flex;
+}
+
+/* AQUI É ESTILIZADO O MENU LATERAL */
+.sidebar {
+    position: absolute;
+    width: 60px;
+    background-color: #92E3A9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 50vw;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .abrirMenu {
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.sidebar ul li {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.logout-button {
+    margin-top: 50px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+h1 {
+    color: #006666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pesquisar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pesquisar-button {
+    background-color: #ffffff;
+    border: 1px solid #006666;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-left: 800px; */
+    justify-content: space-between;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-search {
+    border: 0 none;
+    outline: none;
+    font-size: 15px;
+    height: 20px;
+}
+
+.btn-search {
+    border: none;
+    background: none;
+}
+
+
+/* ESTILIZAÇÃO SIDE NAV COM ANIMAÇÃO */
+
+.sidebarAnimate {
+    height: 50vw;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #92E3A9;
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+.sidebarAnimate ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebarAnimate ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* The navigation menu links */
+.sidebarAnimate ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #1c7952;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.sidebarAnimate ul li a img{
+    margin-right: 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebarAnimate a:hover {
+    color: #000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebarAnimate .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #1c7952;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebarAnimate {
+        padding-top: 15px;
+    }
+
+    .sidebarAnimate a {
+        font-size: 18px;
+    }
+}
+
+/* FORM MODAL */
+.altera-modal {
+    background-color: #5AE4A8;
+    width: 600px;
+}
+
+.altera-modal .close {
+    color: #006666;
+}
+.altera-modal .close:hover {
+    color: #003a3a;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 15px;
+}
+
+.form-modal .input-modal label {
+    color: #006666;
+}
+.form-modal .input-modal input {
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #006666;
+    width: 500px;
+    height: 20px;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+  }
+
+  .form-modal .input-modal input:focus {
+    background-color: #008d8d;
+    outline: 2px solid #006666;
+    border: none;
+    transition: .1s;
+  }
+  
+  .form-modal button {
+    border: none;
+    border-radius: 10px;
+    background-color: #006666;
+    color: #ececec;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.form-modal button:hover {
+      color: #fff;
+      background-color: #005252;
+      transition: .1s;
+  }

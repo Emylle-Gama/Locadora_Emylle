@@ -1,0 +1,83 @@
+h1 {
+    color: #006666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pesquisar-button {
+    background-color: #ffffff;
+    border: 1px solid #006666;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-left: 800px; */
+    justify-content: space-between;
+    width: 300px;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.input-search {
+    border: 0 none;
+    outline: none;
+    font-size: 15px;
+    height: 20px;
+}
+
+.btn-search {
+    border: none;
+    background: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid #006666;
+    line-height: 1.5em;
+    margin-top:1% ;
+}
+
+table thead th {
+    background-color: #e0f2e9;
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #006666;
+    text-align: center;
+}
+
+table tbody td {
+    padding: 10px;
+}
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn i, .delete-btn i {
+    font-size: 18px;
+}
+
+.cadastro-btn {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 15px;
+    background-color: #006666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}

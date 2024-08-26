@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="./assets/global/global.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-content">
+            <div class="logo">
+                <img src="img/global/WDA GROUP LOGO.png" alt="Logo da Empresa" width="100">
+            </div>
+            <div id="myBtn" class="welcome">
+                <p>Seja bem vindo, Fulano</p>
+                <img src="img/global/user_icon.png" alt="Ícone de Perfil" width="30">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="full-sidebar">
+            <nav class="sidebar">
+                <ul>
+                    <li class="abrirMenu" onclick="openNav()"><img src="../img/global/seta de abertura_icon.png"
+                            alt="icone de abertura"></li>
+                    <li><a href="#"><img src="img/global/dashboard_icon.png" alt="Dashboard" width="24"></a></li>
+                    <li><a href="pages/livro.html"><img src="img/global/livro_icon.png" alt="Livros" width="30"></a>
+                    </li>
+                    <li>
+                        <a href="pages/cadlocatario.html">
+                            <img src="img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/cadusuarios.html">
+                            <img src="img/global/cadusuarios_icon.png" alt="Cadastro de Usuários" width="30">
+                        </a>
+                    </li>
+
+                    <li><a href="pages/cadlivro.html"><img src="img/global/cadlivro_icon.png" alt="Cadastro de Livros"
+                                width="30"></a></li>
+                    <li><a href="pages/cadeditoras.html"><img src="img/global/cadlocadoras_icon.png"
+                                alt="Cadastro de Locadoras" width="30"></a></li>
+                    <li><a href="pages/regaluguel.html"><img src="img/global/aluguel_icon.png" alt="Aluguel"
+                                width="30"></a></li>
+                </ul>
+                <!-- BOTÃO DE LOGOUT -->
+                <a href="/pages/login.html" class="logout-button">
+                    <img src="./img/global/logout_icon.png" alt="Botão de sair">
+                </a>
+            </nav>
+            <div id="mySidebar" class="sidebarAnimate">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img
+                        src="img/global/seta_fech_icon.png" alt="icone de fechamento"></a>
+                <ul>
+                    <li><a href="#"><img src="img/global/dashboard_icon.png" alt="Dashboard" width="24">Dashboard</a>
+                    </li>
+                    <li><a href="pages/livro.html"><img src="img/global/livro_icon.png" alt="Livros"
+                                width="30">Livros</a></li>
+                    <li>
+                        <a href="pages/cadlocatario.html">
+                            <img src="img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                            Cadastro de Locatarios
+                        </a>
+                    </li>
+                    <li><a href="pages/cadusuarios.html"><img src="img/global/cadusuarios_icon.png"
+                                alt="Cadastro de Usuários" width="30">Cadastro de Usuários</a></li>
+                    <li><a href="pages/cadlivro.html"><img src="img/global/cadlivro_icon.png" alt="Cadastro de Livros"
+                                width="30">Cadastro de Livros</a></li>
+                    <li><a href="pages/cadeditoras.html"><img src="img/global/cadlocadoras_icon.png"
+                                alt="Cadastro de Locadoras" width="30">Cadastro de Locadoras</a></li>
+                    <li><a href="pages/regaluguel.html"><img src="img/global/aluguel_icon.png" alt="Aluguel"
+                                width="30">Aluguel</a></li>
+                    <!-- BOTAO LOGOUT -->
+                    <li>
+                        <a href="/pages/login.html" class="logout-button">
+                            <img src="./img/global/logout_icon.png" alt="Botão de sair">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <div class="cabecalho-dash">
+                <h1>DASHBOARD</h1>
+                <div class="pesquisar">
+                    <div class="pesquisar-button">
+                        <input type="text" placeholder="Buscar..." class="input-search">
+                        <button class="btn-search"><img src="../img/global/pesquisar_icon.png" alt="Buscar" width="20"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- COMEÇA A PIZZA E A LISTAGEM AQUI -->
+            <section class="charts">
+                <div class="chart-box">
+                    <h3>Livros</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div class="books-list">
+                    <h3>Livros mais alugados</h3>
+                    <ul>
+                        <li>Dom Quixote</li>
+                        <li>O Senhor dos Anéis</li>
+                        <li>O Pequeno Príncipe</li>
+                        <li>Harry Potter e a Pedra Filosofal</li>
+                        <li>A Hipótese do Amor</li>
+                        <li>É Assim que Acaba</li>
+                        <li>Depois do Sim</li>
+                        <li>A Cabana</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>alugueis totais</th>
+                            <th>qtd. de livros emprestados</th>
+                            <th>alugueis ativos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mª Luiza Soares</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Matos</td>
+                            <td>17</td>
+                            <td>16</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Joyce Luiza</td>
+                            <td>15</td>
+                            <td>12</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Mateus Sales</td>
+                            <td>5</td>
+                            <td>9</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Aqui colocamos os scripts em js para a nav, modais e elementos do dash -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/dash.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #92E3A9;
+  /* Fundo verde água*/
+  font-family: Arial, sans-serif;
+}
+
+
+
+.login-container {
+  background-color: #fff;
+  /* Cor de fundo do formulário */
+  padding: 20px;
+  border: 1px solid #006666;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-left: 12px;
+  margin-bottom: 10px;
+  color: #006666;
+  text-align: left;
+}
+
+
+.input-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-group img {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: calc(100% - 10px); /* Ajusta a largura para considerar o padding */
+  padding: 15px 40px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.login-container input[type="submit"] {
+  background-color: #30B31A;
+  /* Cor do botão */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 200px;
+
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #0a2a11;
+  /* Cor do botão ao passar o mouse */
+  transition: .2s;
+}
+
+/* Estilos para a imagem */
+
+.image-container img {
+  width: auto;
+  height: 60px;
+  margin: auto;
+
+}
+
+.pass {
+  margin-top: 10px;
+}
+
+.pass a {
+  color: #0a2a11a2;
+}
+
+.pass a:hover {
+  color: #0a2a11;
+  transition: .2s;
+}

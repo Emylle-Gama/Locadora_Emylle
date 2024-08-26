@@ -1,0 +1,104 @@
+{
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.7,
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.rulers": [
+      80,
+      120
+    ],
+    "extensions.ignoreRecommendations": true,
+    "typescript.tsserver.log": "off",
+    "files.associations": {
+      ".env.*": "dotenv",
+      ".prettierrc": "json",
+      "*.css": "css"
+    },
+    "editor.parameterHints.enabled": false,
+    "editor.renderLineHighlight": "gutter",
+    "cSpell.language": "en,pt",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "terminal.integrated.showExitAlert": false,
+    "[prisma]": {
+      "editor.formatOnSave": true
+    },
+    "typescript.suggest.autoImports": true,
+    "workbench.editor.labelFormat": "short",
+    "editor.fontLigatures": true,
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "explorer.compactFolders": false,
+    "git.enableSmartCommit": true,
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font Mono",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.semanticHighlighting.enabled": false,
+    // "workbench.productIconTheme": "fluent-icons",
+    // "editor.fontFamily": "JetBrains Mono",
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**\/CVS": true,
+      "**\/.DS_Store": true,
+      "**\/.hg": true,
+      "**\/.svn": true,
+      "**\/.git": true,
+      ".vscode": true,
+      "node_modules": true
+    },
+    // "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "symbols.hidesExplorerArrows": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "console-ninja.featureSet": "Community",
+    "workbench.editor.empty.hint": "hidden",
+    "update.showReleaseNotes": false,
+    "security.promptForLocalFileProtocolHandling": false,
+    "workbench.activityBar.location": "default",
+    "window.zoomLevel": 0,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.enabled": false,
+    // "editor.scrollbar.vertical": "hidden",
+    "explorer.sortOrder": "foldersNestsFiles",
+    "explorer.fileNesting.patterns": {
+      "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+      "tailwind.config.js": "tailwind.config*, postcss.config*",
+      ".env.local": ".env*",
+      ".env": ".env*"
+    },
+    "explorer.fileNesting.enabled": true,
+    "workbench.statusBar.visible": false,
+    "terminal.external.linuxExec": "fish",
+    "terminal.integrated.env.windows": {},
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Min Dark",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+  }

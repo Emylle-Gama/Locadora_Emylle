@@ -1,0 +1,95 @@
+.cabecalho-dash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.cabecalho-dash h1 {
+  color: #006666;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* 
+  "caixa" do grafico
+*/
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+/* grafico de pizza*/
+.chart-box {
+  width: 23%;
+  height: 300x;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* titulo*/
+.chart-box h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #065A60;
+  text-align: center;
+}
+/* listagem de livros */
+.books-list {
+  width: 69%;
+  height: 300x;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.books-list h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #065A60;
+  text-align: center;
+}
+
+.books-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.books-list ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+  color: #065A60;
+}
+
+/* TABELA INFERIOR */
+.data-table {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #065A60;
+}
+
+table thead th {
+  text-align: center;
+  padding-bottom: 10px;
+  ;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #E5E5E5;
+  text-align: center;
+}
+
+table tbody tr td {
+  padding: 10px 0;
+}

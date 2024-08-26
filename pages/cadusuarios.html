@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="../assets/global/global.css">
+    <link rel="stylesheet" href="../assets/css/pages/cadusuarios.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-content">
+            <div class="logo">
+                <img src="../img/global/WDA GROUP LOGO.png" alt="Logo da Empresa" width="100">
+            </div>
+            <div class="welcome">
+                <p>Seja bem vindo, Fulano</p>
+                <img src="../img/global/user_icon.png" alt="Ícone de Perfil" width="30">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="full-sidebar">
+            <nav class="sidebar">
+                <ul>
+                    <li class="abrirMenu" onclick="openNav()"><img src="../img/global/seta de abertura_icon.png"
+                            alt="icone de abertura"></li>
+                    <li><a href="../index.html"><img src="../img/global/dashboard_icon.png" alt="Dashboard"
+                                width="24"></a></li>
+                    <li><a href="../pages/livro.html"><img src="../img/global/livro_icon.png" alt="Livros"
+                                width="30"></a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadlocatario.html">
+                            <img src="../img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                        </a>
+                    </li>
+                    <li><a href="../pages/cadusuarios.html"><img src="../img/global/cadusuarios_icon.png"
+                                alt="Cadastro de Usuários" width="30"></a></li>
+                    <li><a href="../pages/cadlivro.html"><img src="../img/global/cadlivro_icon.png"
+                                alt="Cadastro de Livros" width="30"></a></li>
+                    <li><a href="../pages/cadeditoras.html"><img src="../img/global/cadlocadoras_icon.png"
+                                alt="Cadastro de Locadoras" width="30"></a></li>
+                    <li><a href="../pages/regaluguel.html"><img src="../img/global/aluguel_icon.png" alt="Aluguel"
+                                width="30"></a></li>
+                </ul>
+                <!-- BOTÃO DE LOGOUT -->
+                <a href="../pages/login.html" class="logout-button">
+                    <img src="../img/global/logout_icon.png" alt="Botão de sair">
+                </a>
+            </nav>
+            <div id="mySidebar" class="sidebarAnimate">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img
+                        src="../img/global/seta_fech_icon.png" alt="icone de fechamento"></a>
+                <ul>
+                    <li><a href="../index.html"><img src="../img/global/dashboard_icon.png" alt="Dashboard"
+                                width="24">Dashboard</a>
+                    </li>
+                    <li><a href="../pages/livro.html"><img src="../img/global/livro_icon.png" alt="Livros"
+                                width="30">Livros</a></li>
+                    <li>
+                        <a href="../pages/cadlocatario.html">
+                            <img src="../img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                            Cadastro de Locatarios
+                        </a>
+                    </li>
+                    <li><a href="../pages/cadusuarios.html"><img src="../img/global/cadusuarios_icon.png"
+                                alt="Cadastro de Usuários" width="30">Cadastro de Usuários</a></li>
+                    <li><a href="../pages/cadlivro.html"><img src="../img/global/cadlivro_icon.png"
+                                alt="Cadastro de Livros" width="30">Cadastro de Livros</a></li>
+                    <li><a href="../pages/cadeditoras.html"><img src="../img/global/cadlocadoras_icon.png"
+                                alt="Cadastro de Locadoras" width="30">Cadastro de Locadoras</a></li>
+                    <li><a href="../pages/regaluguel.html"><img src="../img/global/aluguel_icon.png" alt="Aluguel"
+                                width="30">Aluguel</a></li>
+                    <!-- BOTAO LOGOUT -->
+                    <li>
+                        <a href="../pages/login.html" class="logout-button">
+                            <img src="../img/global/logout_icon.png" alt="Botão de sair">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <div class="cabecalho">
+                <h1>CADASTRO DE USUÁRIOS</h1>
+                <a href="../pages/usuarios.html" class="icon-cabecalho">
+                    <img src="../img/global/lista_icon.png" width="30">
+                </a>
+            </div>
+            <form class="form">
+                <div class="field">
+                    <label for="nome">Nome do Usuário *</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="field">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="field">
+                    <label for="senha">Senha *</label>
+                    <input type="text" id="senha" name="senha">
+                </div>
+                <div class="buttons-footer">
+                    <div class="buttons-radio">
+                        <div class="radio">
+                            <label for="leitor">Leitor</label>
+                            <input type="radio" name="tipo_usuario" value="leitor" class="cadastrar" />
+                        </div>
+                        <div class="radio">
+                            <label for="editor">Editor</label>
+                            <input type="radio" name="tipo_usuario" value="editor" class="cancelar" />
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="btn_cadastro_sucesso" class="cadastrar">Cadastrar</button>
+                        <button type="reset" class="cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+            </ul>
+        </main>
+    </div>
+    <!-- Modais de Cadastro Usuario -->
+    <!-- Cadastrado com Sucesso -->
+    <div id="cadastro_sucesso" class="modal">
+        <!-- Conteudo do modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="../img/global/sucesso.png" alt="">
+            <h2>Cadastro Feito com sucesso</h2>
+        </div>
+    </div>
+    <!-- Aqui colocamos os scripts em js para a nav e modais -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/global/pages/cadusuariosModal.js"></script>
+</body>
+
+</html>

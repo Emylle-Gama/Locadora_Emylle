@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatários</title>
+    <link rel="stylesheet" href="../assets/global/global.css">
+    <link rel="stylesheet" href="../assets/css/pages/locatarios.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-content">
+            <div class="logo">
+                <img src="../img/global/WDA GROUP LOGO.png" alt="Logo da Empresa" width="100">
+            </div>
+            <div class="welcome">
+                <p>Seja bem vindo, Fulano</p>
+                <img src="../img/global/user_icon.png" alt="Ícone de Perfil" width="30">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="full-sidebar">
+            <nav class="sidebar">
+                <ul>
+                    <li class="abrirMenu" onclick="openNav()">
+                        <img src="../img/global/seta de abertura_icon.png" alt="icone de abertura">
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            <img src="../img/global/dashboard_icon.png" alt="Dashboard" width="24">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/livro.html">
+                            <img src="../img/global/livro_icon.png" alt="Livros" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadlocatario.html">
+                            <img src="../img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadusuarios.html">
+                            <img src="../img/global/cadusuarios_icon.png" alt="Cadastro de Usuários" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadlivro.html">
+                            <img src="../img/global/cadlivro_icon.png" alt="Cadastro de Livros" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadeditoras.html">
+                            <img src="../img/global/cadlocadoras_icon.png" alt="Cadastro de Locadoras" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/regaluguel.html">
+                            <img src="../img/global/aluguel_icon.png" alt="Aluguel" width="30">
+                        </a>
+                    </li>
+                </ul>
+                 <!-- BOTÃO DE LOGOUT -->
+                 <a href="../pages/login.html" class="logout-button">
+                    <img src="../img/global/logout_icon.png" alt="Botão de sair">
+                </a>
+            </nav>
+            <div id="mySidebar" class="sidebarAnimate">
+                <!-- BOTÃO DE RECOLHER O MENU -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="../img/global/seta_fech_icon.png" alt="icone de fechamento">
+                </a>
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <img src="../img/global/dashboard_icon.png" alt="Dashboard" width="24">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/livro.html">
+                            <img src="../img/global/livro_icon.png" alt="Livros" width="30">
+                            Livros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadlocatario.html">
+                            <img src="../img/global/usuarios_icon.png" alt="Cadastro de Locatarios" width="30">
+                            Cadastro de Locatarios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadusuarios.html">
+                            <img src="../img/global/cadusuarios_icon.png" alt="Cadastro de Usuários" width="30">
+                            Cadastro de Usuários
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadlivro.html">
+                            <img src="../img/global/cadlivro_icon.png" alt="Cadastro de Livros" width="30">
+                            Cadastro de Livros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/cadeditoras.html">
+                            <img src="../img/global/cadlocadoras_icon.png" alt="Cadastro de Locadoras" width="30">
+                            Cadastro de Locadoras
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/regaluguel.html">
+                            <img src="../img/global/aluguel_icon.png" alt="Aluguel" width="30">
+                            Aluguel
+                        </a>
+                    </li>
+                    <!-- BOTAO SAIR -->
+                    <li>
+                        <a href="../pages/login.html" class="logout-button">
+                            <img src="../img/global/logout_icon.png" alt="Botão de sair">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <h1>LOCATÁRIOS CADASTRADOS</h1>
+            <div class="pesquisar">
+                <div class="pesquisar-button">
+                    <input id="searchInput" type="text" placeholder="Buscar..." class="input-search">
+                    <button id="searchButton" class="btn-search"><img src="../img/global/pesquisar_icon.png" alt="Buscar" width="20"></button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>email</th>
+                        <th>telefone</th>
+                        <th>ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- DINAMICO -->
+                </tbody>
+            </table>
+            <a href="../pages/cadlocatario.html">
+                <button class="cadastro-btn">cadastrar</button>
+            </a>
+        </main>
+    </div>
+    <!-- Apaga Livro -->
+    <div id="apaga_locatario" class="modal">
+        <!-- Conteúdo do modal -->
+        <div class="modal-content">
+            <div id="apaga_locatario_info">
+                <!-- AQUI SERÁ PREENCHIDO VIA JAVASCRIPT -->
+            </div>
+            <p>Se você clicar em excluir, não será possível recuperar os dados desse item no futuro.</p>
+            <div class="modal-buttons">
+                <button type="button" class="excluir">excluir</button>
+                <button type="button" class="cancelar">cancelar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Altera Locatários -->
+    <div id="altera_locatario" class="modal">
+    
+        <!-- Conteúdo do modal -->
+        <div class="modal-content altera-modal">
+            <span class="close fechar_altera_livro">&times;</span>
+            <form action="#" class="form-modal">
+                <div class="input-modal">
+                  <label for="nome_locatario">Nome do Locatário</label>
+                  <br/>
+                  <input type="text" name="" id="nome_locatario">
+                </div>
+              
+                <div class="input-modal">
+                  <label for="email_locatario">Email</label>
+                  <br/>
+                  <input type="email" name="" id="email_locatario">
+                </div>
+              
+                <div class="input-modal">
+                  <label for="senha_locatario">Senha</label>
+                  <br/>
+                  <input type="password" name="" id="senha_locatario">
+                </div>
+              
+                <div class="input-modal">
+                  <label for="cpf_locatario">CPF</label>
+                  <br/>
+                  <input type="text" name="" id="cpf_locatario">
+                </div>
+                <button type="submit">Salvar Alterações</button>
+              </form>
+        </div>
+    </div>
+    <!-- Aqui colocamos os scripts em js para a nav e modais -->
+    <script src="/assets/js/nav.js"></script>
+    <script src="../assets/js/global/pages/locatarios.js"></script>
+</body>
+</html>
